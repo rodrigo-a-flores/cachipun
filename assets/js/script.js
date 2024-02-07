@@ -5,15 +5,12 @@ for(let i=0;i<numJuegos;i++){
     switch(computer){
         case 0:
             computer = 'piedra';
-            console.log(computer);
             break;
         case 1:
             computer = 'papel';
-            console.log(computer);
             break;
         case 2:
             computer = 'tijera';
-            console.log(computer);
             break;
         default:
             alert('Opcion indeterminada');
@@ -25,7 +22,7 @@ for(let i=0;i<numJuegos;i++){
         alert('Opción inválida.');
         break;
     }
-    
+
     // OPCION: JUGADOR ESCOGE PIEDRA
     if(player == 'piedra' && computer == 'piedra'){
         alert('Es un empate. La computadora eligió: ' + computer);
