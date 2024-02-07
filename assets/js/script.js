@@ -17,37 +17,39 @@ for(let i=0;i<numJuegos;i++){
             break;
         default:
             alert('Opcion indeterminada');
-    }
-
-    // OPCION: JUGADOR ESCOGE PIEDRA
-    if(player == 'piedra' && computer == 'piedra'){
-        alert('Es un empate.');
-    }else if(player == 'piedra' && computer == 'papel'){
-        alert('Has perdido contra la maquina');
-    }else if(player == 'piedra' && computer == 'tijera'){
-        alert('Has ganado, felicitaciones.');
-    }
-
-    // OPCION: JUGADOR ESCOGE PAPEL
-    if(player == 'papel' && computer == 'piedra'){
-        alert('Has ganado, felicitaciones.');
-    }else if(player == 'papel' && computer == 'papel'){
-        alert('Es un empate.');
-    }else if(player == 'papel' && computer == 'tijera'){
-        alert('Has perdido contra la maquina');
-    }
-
-    // OPCION: JUGADOR ESCOGE TIJERA
-    if(player == 'tijera' && computer == 'piedra'){
-        alert('Has perdido contra la maquina');
-    }else if(player == 'tijera' && computer == 'papel'){
-        alert('Has ganado, felicitaciones.');
-    }else if(player == 'tijera' && computer == 'tijera'){
-        alert('Es un empate.');
+            break;
     }
 
     // OPCION: JUGADOR ESCOGE UNA OPCION INVALIDA
     if(player != 'piedra' && player != 'papel' && player != 'tijera'){
         alert('Opción inválida.');
+        break;
     }
+    
+    // OPCION: JUGADOR ESCOGE PIEDRA
+    if(player == 'piedra' && computer == 'piedra'){
+        alert('Es un empate. La computadora eligió: ' + computer);
+    }else if(player == 'piedra' && computer == 'papel'){
+        alert('Has perdido contra la maquina. La computadora eligió: ' + computer);
+    }else if(player == 'piedra' && computer == 'tijera'){
+        alert('Has ganado, felicitaciones. La computadora eligió: ' + computer);
+    }
+
+    // OPCION: JUGADOR ESCOGE PAPEL
+    if(player == 'papel' && computer == 'piedra'){
+        alert('Has ganado, felicitaciones. La computadora eligió: ' + computer);
+    }else if(player == 'papel' && computer == 'papel'){
+        alert('Es un empate. La computadora eligió: ' + computer);
+    }else if(player == 'papel' && computer == 'tijera'){
+        alert('Has perdido contra la maquina. La computadora eligió: ' + computer);
+    }
+
+    // OPCION: JUGADOR ESCOGE TIJERA
+    if(player == 'tijera' && computer == 'piedra'){
+        alert('Has perdido contra la maquina. La computadora eligió: ' + computer);
+    }else if(player == 'tijera' && computer == 'papel'){
+        alert('Has ganado, felicitaciones. La computadora eligió: ' + computer);
+    }else if(player == 'tijera' && computer == 'tijera'){
+        alert('Es un empate. La computadora eligió: ' + computer);
+    }    
 }
